@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SCM</string>
+    <string name="nombreProveedor">Ingrese el proveedor</string>
+    <string name="nombreProducto">Ingrese el producto</string>
+    <string name="codigoProducto">Ingrese el EAN</string>
+    <string name="fechaVencimiento">Ingrese fecha de Vto</string>
+    <string name="botonBuscar">Buscar</string>
+    <string name="botonCamara">Boton Camara</string>
+    <string name="botonConfirmar">Registrar</string>
+    <string name="botonGuardarImagen">Save Image</string>
+    <string name="title_activity_lista_productos">ListaProductos</string>
+    <string name="btn_agregar">Agregar</string>
+
+
+</resources>

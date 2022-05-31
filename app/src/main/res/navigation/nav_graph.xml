@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listado">
+    <activity
+        android:id="@+id/mainActivity2"
+        android:name="com.example.scm.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <navigation android:id="@+id/navigation2"
+        app:startDestination="@id/listado">
+        <action
+            android:id="@+id/action_global_mainActivity2"
+            app:destination="@id/mainActivity2" />
+        <navigation android:id="@+id/navigation3"
+            app:startDestination="@id/listado">
+            <activity
+                android:id="@+id/listado"
+                android:name="com.example.scm.Listado"
+                android:label="activity_listado"
+                tools:layout="@layout/activity_listado" />
+            <action
+                android:id="@+id/action_global_navigation4"
+                app:destination="@id/navigation4" />
+        </navigation>
+        <navigation android:id="@+id/navigation4"
+            app:startDestination="@id/mainActivity3">
+            <activity
+                android:id="@+id/mainActivity3"
+                android:name="com.example.scm.MainActivity"
+                android:label="activity_main"
+                tools:layout="@layout/activity_main" />
+        </navigation>
+    </navigation>
+</navigation>
