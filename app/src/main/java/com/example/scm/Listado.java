@@ -17,16 +17,19 @@ public class Listado extends AppCompatActivity implements View.OnClickListener {
         setContentView(R.layout.activity_listado);
 
         btn_cambiar = (android.widget.Button) findViewById(R.id.btn_cambiar);
+        btn_cambiar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Listado.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     @Override
     public void onClick(View v) {
-        int id = v.getId();
 
-        if (id == R.id.btn_cambiar){
-            Intent intent = new Intent(this, MainActivity.class );
-
-        }
 
     }
 }

@@ -7,7 +7,9 @@
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="28" />
 
-    <queries></queries>
+    <queries>
+
+    </queries>
 
     <application
         android:allowBackup="true"
